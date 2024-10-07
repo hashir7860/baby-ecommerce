@@ -89,10 +89,13 @@
 .product_description_area .nav.nav-tabs li a.active,
 .blog-pagination .page-item.active .page-link,
 .single-footer-widget .click-btn {
-  background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  /* background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); */
+  /* background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); */
+  /* background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); */
+  /* background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); */
+  /* background: #f6f7f9; */
+  /* background: #828bb2; */
+  background: #8d8d8d;
 }
 
 .gradient-bg-reverse,
@@ -1382,10 +1385,10 @@ h6 {
 }
 
 .header_area .main_menu .main_box {
-  background: #fff;
+  background: white;
   margin: 0px auto 0;
-  max-width: 1200px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* max-width: 1200px; */
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1532,8 +1535,8 @@ h6 {
 }
 
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-  background: #ffba00;
-  color: #fff;
+  background: white;
+  /* color: #fff; */
 }
 
 @media (min-width: 992px) {
@@ -1670,7 +1673,9 @@ h6 {
 
 .banner-area {
   /* background: url(/img/banner/banner-bg.jpg) center no-repeat; */
-  background: url(/img/hero.jpg) center no-repeat;
+  background: url(/img/hero-2.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -2233,7 +2238,8 @@ h6 {
   width: 30px;
   line-height: 30px;
   text-align: center;
-  background: #828bb2;
+  /* background: #828bb2; */
+  background: #8d8d8d;
   border-radius: 50%;
   display: inline-block;
   color: #fff;
@@ -2561,9 +2567,9 @@ h6 {
   text-transform: uppercase;
 }
 
-.single-related-product:hover .desc a {
+/* .single-related-product:hover .desc a {
   color: #ffba00;
-}
+} */
 
 @media (max-width: 991px) {
   .ctg-right {
@@ -8123,7 +8129,7 @@ label {
 /* End Contact Success and error Area css
 ============================================================================================ */
 .footer-area {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   background-color: #222222;
 }
 
@@ -8317,3 +8323,38 @@ label {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.useful-hover li:hover{
+  margin-left: 7px;
+}
+
+
+.navbar-nav li {
+  margin: 0 7px;
+}
+
+/* .navbar-nav .nav-link { */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-size: 20px; */
+  /* font-weight: 700; */
+  /* color: white !important; */
+  /* color: rgba(152, 161, 227, 1) !important; */
+/* } */
+
+/* .navbar-nav .nav-link:hover {
+  color: #002C72 !important;
+} */
+
+/* .navbar-nav .nav-link.active {
+  color: #002C72 !important;
+} */
+
+.main_box-scrolled {
+  background: white !important;
+  padding: 15px;
+}
+
+.navbar-scrolled .nav-link {
+  color: black !important;
+}

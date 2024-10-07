@@ -1444,7 +1444,8 @@ h6 {
 
 .header_area .navbar .nav .nav-item:hover .nav-link,
 .header_area .navbar .nav .nav-item.active .nav-link {
-  color: #ffba00;
+  /* color: #ffba00; */
+  color: black;
 }
 
 .header_area .navbar .nav .nav-item.submenu {
@@ -2298,7 +2299,8 @@ h6 {
 
 .exclusive-deal-area .exclusive-left {
   position: realtive;
-  background: url(../img/exclusive.jpg) center no-repeat;
+  /* background: url(../img/exclusive.jpg) center no-repeat; */
+  background: url(/img/count-2.jpg) center no-repeat;
   background-size: cover;
   text-align: center;
   padding: 275px 0;

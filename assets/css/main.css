@@ -95,7 +95,8 @@
   /* background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); */
   /* background: #f6f7f9; */
   /* background: #828bb2; */
-  background: #8d8d8d;
+  /* background: #8d8d8d; */
+  background: #b4b4b4;
 }
 
 .gradient-bg-reverse,
@@ -1695,6 +1696,56 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.addtocart-banner-area {
+  background: url(/assets/img/add-to-cart-hero.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.wishlist-banner-area {
+  background: url(/assets/img/wishlish-hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+/* .shop-banner-area {
+  background: url(/assets/img/shop-hero-3.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} */
+
+.shop-banner-area {
+  position: relative;
+  background-image: url("/assets/img/shop-hero-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 100px;
+  z-index: -1;
+}
+
+.wishlist-banner-area:before,
+.addtocart-banner-area:before,
+.shop-banner-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: Luminosity;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
@@ -4829,9 +4880,9 @@ label {
   border-bottom: 1px solid #eee;
 }
 
-.sidebar-categories .main-nav-list a:hover {
+/* .sidebar-categories .main-nav-list a:hover {
   color: #ffba00;
-}
+} */
 
 .sidebar-categories .main-nav-list a .number {
   color: #cccccc;
@@ -4979,14 +5030,15 @@ label {
 }
 
 .pixel-radio:checked {
-  border: 7px solid #ffba00;
+  /* border: 7px solid #ffba00; */
+  border: 7px solid grey;
 }
 
 .pixel-radio:checked::after {
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #ffba00;
+  background: grey;
   content: '';
   display: block;
   width: 20px;
@@ -6782,6 +6834,35 @@ label {
 ============================================================================================ */
 /* Login form Area css
 ============================================================================================ */
+.login-bg {
+  background: url(/assets/img/login.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 30rem !important;
+}
+
+.login-bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #000;
+  opacity: .5;
+}
+
+.login-bg .hover {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
 .login_box_area .login_box_img {
   margin-right: -30px;
   position: relative;
@@ -8379,4 +8460,14 @@ label {
 .heading {
   font-size: 40px;
   font-weight: 700;
+}
+
+.create-account-btn {
+  background: black;
+  color: white;
+}
+
+.create-account-btn:hover {
+  background: black;
+  color: white;
 }

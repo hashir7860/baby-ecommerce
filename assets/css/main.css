@@ -107,7 +107,7 @@
   background: linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
 }
 
-.gradient-color,
+/* .gradient-color,
 .s_product_text h2,
 .s_product_text .list li a.active,
 .product_description_area .tab-content .total_rate .box_total h4,
@@ -118,7 +118,7 @@
   background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 /* Start primary btn css
 ============================================================================================ */
@@ -173,7 +173,7 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #777777;
+  color: #000;
   background: #fff;
 }
 
@@ -1716,13 +1716,23 @@ h6 {
   z-index: -1;
 }
 
-/* .shop-banner-area {
-  background: url(/assets/img/shop-hero-3.jpg);
-  background-position: left;
+.checkout-banner-area {
+  background: url(/assets/img/checkout-hero.jpg);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-} */
+  z-index: -1;
+}
+
+.detail-banner-area {
+  background: url(/assets/img/product-detail-hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
 
 .shop-banner-area {
   position: relative;
@@ -1734,6 +1744,8 @@ h6 {
   z-index: -1;
 }
 
+.detail-banner-area:before,
+.checkout-banner-area:before,
 .wishlist-banner-area:before,
 .addtocart-banner-area:before,
 .shop-banner-area::before {
@@ -6602,7 +6614,9 @@ label {
 }
 
 .order_box {
-  background: #e5ecee;
+  /* background: #e5ecee; */
+  /* background: #6c757d; */
+  background: #c8c8c8;
   padding: 30px;
 }
 
@@ -6843,6 +6857,16 @@ label {
   height: 30rem !important;
 }
 
+.signup-bg {
+  background: url(/assets/img/signup-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 30rem !important;
+}
+
+.signup-bg:before,
 .login-bg:before {
   position: absolute;
   left: 0;
@@ -6854,6 +6878,7 @@ label {
   opacity: .5;
 }
 
+.signup-bg .hover,
 .login-bg .hover {
   position: absolute;
   top: 50%;
@@ -8469,5 +8494,9 @@ label {
 
 .create-account-btn:hover {
   background: black;
+  color: white;
+}
+
+.single-footer-widget p{
   color: white;
 }

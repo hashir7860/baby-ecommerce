@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Dashboard - Form</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -28,7 +28,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Template Stylesheet -->
     <link href="dashasset/css/style.css" rel="stylesheet" />
   </head>
 
@@ -74,7 +73,8 @@
       <div class="content">
         <!-- Navbar Start -->
         <nav
-          class="navbar navbar-expand navbar-light sticky-top px-4 py-0" style="background: #fafafb;"
+          class="navbar navbar-expand navbar-light sticky-top px-4 py-0"
+          style="background: #fafafb"
         >
           <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
             <img src="dashasset/img/logo.png" alt="" class="img-fluid" />
@@ -139,81 +139,121 @@
         </nav>
         <!-- Navbar End -->
 
-        <!-- Sale & Revenue Start -->
-        <div class="container-fluid pt-4 px-3">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0 h-100 py-2 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex gap-3 align-items-center">
-                    <i class="fa fa-chart-line fa-3x text-primary"></i>
-                    <div class="ms-3">
-                      <p class="mb-2">Today Sale</p>
-                      <h6 class="mb-0">$1234</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0 h-100 py-2 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex gap-3 align-items-center">
-                    <i class="fa fa-chart-line fa-3x text-primary"></i>
-                    <div class="ms-3">
-                      <p class="mb-2">Today Sale</p>
-                      <h6 class="mb-0">$1234</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0 h-100 py-2 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex gap-3 align-items-center">
-                    <i class="fa fa-chart-line fa-3x text-primary"></i>
-                    <div class="ms-3">
-                      <p class="mb-2">Today Sale</p>
-                      <h6 class="mb-0">$1234</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0 h-100 py-2 rounded-3">
-                <div class="card-body">
-                  <div class="d-flex gap-3 align-items-center">
-                    <i class="fa fa-chart-line fa-3x text-primary"></i>
-                    <div class="ms-3">
-                      <p class="mb-2">Today Sale</p>
-                      <h6 class="mb-0">$1234</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Sale & Revenue End -->
-
         <!-- Sales Chart Start -->
-        <div class="container-fluid pt-4 px-4 pb-5">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card border-0 h-100 p-2 rounded-3">
-                <div class="card-body">
-                  <h6 class="mb-0">Worldwide Sales</h6>
-                  <div id="chart"></div>
+        <div class="container-fluid pt-3 px-4 pb-5">
+          <h3 class="heading">Form</h3>
+          <div class="card border-0 mt-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control mt-1"
+                      placeholder="First Name"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card border-0 h-100 p-2 rounded-3">
-                <div class="card-body">
-                  <h6 class="mb-0">Worldwide Sales</h6>
-                  <div id="chart2"></div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control mt-1"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Email</label>
+                    <input
+                      type="email"
+                      class="form-control mt-1"
+                      placeholder="example@mail.com"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Phone No.</label>
+                    <input
+                      type="tel"
+                      class="form-control mt-1"
+                      placeholder="+123 456 789"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Date</label>
+                    <input type="date" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Time</label>
+                    <input type="time" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Upload File</label>
+                    <input type="file" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Search</label>
+                    <input type="search" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Url</label>
+                    <input type="url" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Week</label>
+                    <input type="week" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-group fw-bold">
+                    <label for="">Color</label>
+                    <input type="color" class="form-control mt-1" />
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" />
+                    <label class="form-check-label"> Radio </label>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                    />
+                    <label class="form-check-label">Toogle</label>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label"> Checkbox </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -231,9 +271,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- Template Javascript -->
     <script src="dashasset/js/main.js"></script>
-    <script src="dashasset/js/graph.js"></script>
   </body>
 </html>

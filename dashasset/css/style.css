@@ -173,6 +173,29 @@ body {
     }
 }
 
+.btn {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.change-picture-btn {
+    border: 1px solid rgba(76, 73, 227, 1);
+    color: rgba(76, 73, 227, 1);
+}
+
+.change-picture-btn:hover {
+    background: rgba(76, 73, 227, 1);
+    color: white;
+}
+
+.save-btn {
+    background: rgba(76, 73, 227, 1);
+}
+
+.save-btn:hover {
+    background: rgba(76, 73, 227, 1);
+}
+
 .heading {
     font-size: 30px;
     font-weight: 700;

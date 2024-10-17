@@ -61,6 +61,16 @@ $(document).ready(function () {
   /*=================================
   Javascript for product area carousel
   ==================================*/
+  // $(".active-product-area").owlCarousel({
+  //   items: 1,
+  //   autoplay: false,
+  //   autoplayTimeout: 5000,
+  //   loop: true,
+  //   nav: true,
+  //   navText: ["<img src='assets/img/product/prev.png'>", "<img src='assets/img/product/next.png'>"],
+  //   dots: false
+  // });
+
   $(".active-product-area").owlCarousel({
     items: 1,
     autoplay: false,
@@ -68,8 +78,21 @@ $(document).ready(function () {
     loop: true,
     nav: true,
     navText: ["<img src='assets/img/product/prev.png'>", "<img src='assets/img/product/next.png'>"],
-    dots: false
+    dots: false,
+    autoHeight: true,  // Ensures the height adjusts based on content
+    responsive: {
+      0: {
+        items: 1 // 1 item for small screens
+      },
+      600: {
+        items: 1 // 1 item for medium screens
+      },
+      1000: {
+        items: 1 // 1 item for large screens
+      }
+    }
   });
+
 
   /*=================================
   Javascript for single product area carousel

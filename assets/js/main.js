@@ -79,19 +79,74 @@ $(document).ready(function () {
     nav: true,
     navText: ["<img src='assets/img/product/prev.png'>", "<img src='assets/img/product/next.png'>"],
     dots: false,
-    autoHeight: true,  // Ensures the height adjusts based on content
-    responsive: {
-      0: {
-        items: 1 // 1 item for small screens
-      },
-      600: {
-        items: 1 // 1 item for medium screens
-      },
-      1000: {
-        items: 1 // 1 item for large screens
-      }
-    }
+    autoHeight: true // This enables auto height adjustment based on the slide content
   });
+
+
+  // $(".active-product-area").owlCarousel({
+  //   items: 1,
+  //   autoplay: false,
+  //   autoplayTimeout: 5000,
+  //   loop: true,
+  //   nav: true,
+  //   navText: ["<img src='assets/img/product/prev.png'>", "<img src='assets/img/product/next.png'>"],
+  //   dots: false,
+  //   autoHeight: true,  // Ensures the height adjusts based on content
+  //   responsive: {
+  //     0: {
+  //       items: 1 // 1 item for small screens
+  //     },
+  //     600: {
+  //       items: 1 // 1 item for medium screens
+  //     },
+  //     1000: {
+  //       items: 1 // 1 item for large screens
+  //     }
+  //   }
+  // });
+
+  // $(document).ready(function () {
+  //   function getNavText() {
+  //     // Define different navigation images for different screen sizes
+  //     if ($(window).width() < 768) {
+  //       return ["<img src='assets/img/product/prev-mobile.png'>", "<img src='assets/img/product/next-mobile.png'>"];
+  //     } else {
+  //       return ["<img src='assets/img/product/prev.png'>", "<img src='assets/img/product/next.png'>"];
+  //     }
+  //   }
+
+  //   // Initialize the carousel
+  //   $(".active-product-area").owlCarousel({
+  //     items: 1,
+  //     autoplay: false,
+  //     autoplayTimeout: 5000,
+  //     loop: true,
+  //     nav: true,
+  //     navText: getNavText(), // Use the function to dynamically get navText
+  //     dots: false,
+  //     autoHeight: true,
+  //     responsive: {
+  //       0: {
+  //         items: 1
+  //       },
+  //       600: {
+  //         items: 1
+  //       },
+  //       1000: {
+  //         items: 1
+  //       }
+  //     }
+  // });
+
+  // Update the navigation text on window resize
+  // $(window).resize(function () {
+  //   var carousel = $(".active-product-area").data('owl.carousel');
+  //   carousel.settings.navText = getNavText();  // Update navText dynamically
+  //   carousel.invalidate('width');  // Recalculate width
+  //   carousel.refresh();  // Refresh the carousel to apply changes
+  // });
+  // });
+
 
 
   /*=================================

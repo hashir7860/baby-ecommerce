@@ -197,7 +197,7 @@ h5,
 h6 {
   font-family: "Arial", sans-serif;
   color: #222222;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.2 !important;
 }
 
@@ -1681,12 +1681,13 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  height: 120vh !important;
   /* position: relative; */
 }
 
-.banner-area h1 {
+/* .banner-area h1 {
   font-family: Bodoni Moda !important;
-}
+} */
 
 .about-banner-area {
   /* background: url(/img/banner/banner-bg.jpg) center no-repeat; */
@@ -1823,19 +1824,27 @@ h6 {
   }
 }
 
-.banner-area .banner-content h1 {
-  font-size: 60px;
-  line-height: 66px;
-  font-weight: 700;
-  margin-bottom: 30px;
+.banner-area .banner-content h4 {
+  font-family: Bodoni Moda !important;
+  font-size: 80px;
+  font-weight: lighter;
+  font-style: italic;
+  letter-spacing: 4px;
 }
 
-@media (max-width: 767px) {
+.banner-area .banner-content h3 {
+  font-family: Bodoni Moda !important;
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+/* @media (max-width: 767px) {
   .banner-area .banner-content h1 {
     font-size: 35px;
     line-height: 46px;
   }
-}
+} */
 
 .banner-area .banner-content p {
   margin: 0;
@@ -8528,10 +8537,164 @@ label {
   margin: 0;
 } */
 
-p{
+p {
   font-size: 17px;
 }
 
-.single-footer-widget h3{
+.single-footer-widget h3 {
   font-weight: normal !important;
+}
+
+.twenty-three {
+  font-family: Bodoni Moda !important;
+  font-size: 120px;
+  color: #EBC989;
+  font-weight: 600;
+}
+
+@media(max-width: 2100px) {
+  .banner-area .banner-content h4 {
+    font-size: 125px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 145px;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 170px;
+    letter-spacing: 10px;
+  }
+}
+
+
+@media(max-width: 1920px) {
+  .banner-area .banner-content h4 {
+    font-size: 120px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 135px;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 170px;
+    letter-spacing: 10px;
+  }
+}
+
+@media(max-width: 1830px) {
+  .banner-area .banner-content h4 {
+    font-size: 115px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 125px;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 160px;
+    letter-spacing: 10px;
+  }
+}
+
+
+@media(max-width: 1520px) {
+  .banner-area .banner-content h4 {
+    font-size: 110px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 105px;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 150px;
+    letter-spacing: 10px;
+  }
+}
+
+@media(max-width: 1450px) {
+  .banner-area .banner-content h4 {
+    font-size: 80px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 100px;
+    letter-spacing: 10px;
+    margin: 0;
+    line-height: -5px;
+  }
+
+  .twenty-three {
+    font-size: 120px;
+    letter-spacing: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .banner-area .banner-content h4 {
+    font-size: 70px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 85px;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 105px;
+    letter-spacing: 10px;
+  }
+}
+
+@media(max-width: 576px) {
+  .banner-area .banner-content h4 {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 55px;
+    letter-spacing: 7px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 95px !important;
+    letter-spacing: 10px;
+  }
+}
+
+@media(max-width: 576px) {
+  .banner-area .banner-content h4 {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .banner-area .banner-content h3 {
+    font-size: 45px;
+    letter-spacing: 7px;
+    margin: 0;
+  }
+
+  .twenty-three {
+    font-size: 85px !important;
+    letter-spacing: 7px;
+  }
 }

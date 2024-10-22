@@ -8531,3 +8531,7 @@ label {
 p{
   font-size: 17px;
 }
+
+.single-footer-widget h3{
+  font-weight: normal !important;
+}

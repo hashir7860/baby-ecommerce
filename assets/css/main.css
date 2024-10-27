@@ -8698,3 +8698,7 @@ p {
     letter-spacing: 7px;
   }
 }
+
+.navbar-right a{
+  color: black;
+}
